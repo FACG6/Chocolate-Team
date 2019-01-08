@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+  box-sizing: border-box;
+
+}
+.container{
+    height: 641px;
+    background-image: url(images/background2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*opacity: .7;*/
+}
+.container-2{
+  background: #80808033;
+height: 641px;
+}
+.logo{
+  width: 190px;
+  height: 165px;
+
+}
+.tabs{
+  list-style: none;
+  position: relative;
+  margin-left: 220px;
+  margin-top: -100px;
+}
+.tabs li{
+  float: left;
+}
+.tabs li>input{
+  display: none;
+  position: absolute;
+
+}
+.tabs .tab-content p{
+  font-size: 18px;
+font-weight: 550;
+line-height: 45px;
+width: 600px;
+}
+.tabs .tab-content{
+  display: none;
+  position: absolute;
+  left: 0;
+}
+.img-home{
+    border: 3px solid black;
+    border-radius: 100%;
+    margin-bottom: 15px;
+
+}
+.tabs li>label{
+  line-height: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+}
+/*functionality*/
+.tabs li>input:checked + label{/*the input when checked the after input do that*/
+  border-bottom: 2px solid #ff1504;
+}
+.tabs li>input:checked ~ .tab-content{/*the input check give the sibling class .tabs and do that*/
+      display: block;
+      margin-top: 60px;
+}
+#home_content{
+  text-align: center;
+}
+#home_content p{
+  font-size: xx-large;
+}
