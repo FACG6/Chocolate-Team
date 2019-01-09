@@ -1,7 +1,7 @@
 # __Chocolate Team__
 Welcome to our first project in (html/css), it is simple like peice of chocolate.
 This page will inroduce our team, their message to the world, contact info., and etc.
-    
+
 ### Team Members:
 +   Ayman AlQoqa
 +   Shorouq Saad
@@ -10,7 +10,7 @@ This page will inroduce our team, their message to the world, contact info., and
 ##### _Note: You can access our page from [here](https://facg6.github.io/portfolio-page/)._
 
 ### Members Duties
-+   **Ayman** 
++   **Ayman**
     1. Team Cards section.
     2. README File.
 +   **Shorouq**
@@ -37,6 +37,10 @@ Our methodolgy is listed below:
 +   prepare for presenting our work to other teams (presentation day) and review others works (before presentation day).
 
 ### **User Story**
+![photo home][images/photo4.png]
+![photo aboutUS][images/photo3.png]
+![photo team][images/p1.png]
+![photo contact][images/photo2.png]
 ##### **As a client looking to hire a team of developers**
 I want to visit your site and immediately see a headline about your team
 So that I get a concise description of what you have to offer me.
