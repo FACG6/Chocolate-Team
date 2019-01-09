@@ -66,7 +66,7 @@
   padding: 10px;
 
 }
-.tabs li>label{
+.tabs li>label{/*the child label in list iteam*/
   line-height: 30px;
   padding: 10px 20px;
   cursor: pointer;
@@ -74,10 +74,10 @@
   font-weight: bold;
 }
 /*functionality*/
-.tabs li>input:checked + label{/*the input when checked the after input do that*/
+.tabs li>input:checked + label{/* Adjacent Sibling =>the input when checked the input do that*/
   border-bottom: 2px solid #ff1504;
 }
-.tabs li>input:checked ~ .tab-content{/*the input check give the sibling class .tabs and do that*/
+.tabs li>input:checked ~ .tab-content{/*general sibling the input check give the sibling class .tabs and do that*/
       display: block;
       margin-top: 60px;
 }
@@ -339,7 +339,7 @@
   }
   /*input, textarea that inside div2 contact_us*/
   input, textarea{
-  width: 100%; 
+  width: 100%;
   border: 0px solid rgb(255, 255, 255);
   background: #f8f6f6;
   margin: 10px 0 10px 0px;
@@ -372,4 +372,3 @@
   width: 100%;
   }
   }
-  
