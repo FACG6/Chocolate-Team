@@ -1,161 +1,197 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family:'Sedgwick Ave Display', cursive;
+  font-family: 'Sedgwick Ave Display', cursive;
   box-sizing: border-box;
+}
 
+.container {
+  /*height: 641px;*/
+  background-image: url(images/background2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*opacity: .7;*/
 }
-.container{
-    /*height: 641px;*/
-    background-image: url(images/background2.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /*opacity: .7;*/
-}
-.container-2{
+
+.container-2 {
   background: #80808099;
   height: 100vh;
 }
-.div_img_logo{
+
+.div_img_logo {
   display: inline;
 }
-.logo{
-  width: 15%;
 
+.logo {
+  width: 15%;
 }
-.tabs{
+
+.tabs {
   list-style: none;
   position: relative;
   margin-left: 220px;
   margin-top: -100px;
 }
-.tabs li{
+
+.tabs li {
   float: left;
 }
-.tabs li>input{
+
+.tabs li>input {
   display: none;
   position: absolute;
-
 }
-#home_content p{
+
+#home_content p {
   font-size: 30px;
   font-weight: 550;
   line-height: 45px;
   width: 600px;
   margin-top: 5%;
   background: #0c0c0c7d;
-    color: white;
-    padding: 15px;
+  color: white;
+  padding: 15px;
 }
-.tabs .tab-content{
+
+.tabs .tab-content {
   display: none;
   position: absolute;
   left: 0;
 }
-.tabs .tab-content_home{
+
+.tabs .tab-content_home {
   display: none;
   position: absolute;
   left: 0;
 }
-.img-home{
+
+.img-home {
   border: 3px solid #00000075;
   border-radius: 100%;
   margin-top: 5%;
   padding: 10px;
-
 }
-.tabs li>label{/*the child label in list iteam*/
+
+.tabs li>label {
+  /*the child label in list iteam*/
   line-height: 30px;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 25px;
   font-weight: bold;
 }
+
 /*functionality*/
-.tabs li>input:checked + label{/* Adjacent Sibling =>the input when checked the input do that*/
+.tabs li>input:checked+label {
+  /* Adjacent Sibling =>the input when checked the input do that*/
   border-bottom: 2px solid #ff1504;
 }
-.tabs li>input:checked ~ .tab-content{/*general sibling the input check give the sibling class .tabs and do that*/
-      display: block;
-      margin-top: 60px;
+
+.tabs li>input:checked~.tab-content {
+  /*general sibling the input check give the sibling class .tabs and do that*/
+  display: block;
+  margin-top: 60px;
 }
-#home_content{
+
+#home_content {
   text-align: center;
   margin-left: 10%;
 }
 
-@media screen and (max-width:830px) {
+@media screen and (max-width:920px) {
+  #home_content {
+    margin-left: 6%;
+  }
 
-  .tabs{
+  .img-home {
+    margin-left: -18%;
+  }
+}
+
+@media screen and (max-width:830px) {
+  .tabs {
     margin-left: 20%;
   }
-  .tabs li{
-    width:50%;
-    margin-top:20px;
+
+  .tabs li {
+    width: 50%;
+    margin-top: 20px;
     padding-top: 10px;
   }
-  .container{
-      background-size: cover;
-      overflow-x: hidden;
+
+  .container {
+    background-size: cover;
+    overflow-x: hidden;
   }
-  .tabs .tab-content_home{
+
+  .tabs .tab-content_home {
     margin-top: 100px;
     margin-left: -100px;
   }
-  #home_content p{
+
+  #home_content p {
     font-size: 25px;
     line-height: 65px;
   }
-  .img-home{
+
+  .img-home {
     width: 20%;
     margin-top: 10%;
   }
-  .tabs li>label{
+
+  .tabs li>label {
     font-size: 22px;
   }
-  #home_content{
+
+  #home_content {
     margin-top: 10%;
     margin-left: -24%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:660px) {
+  .tabs li {
+    width: 50%;
+    margin-top: 20px
   }
 
-}
-@media screen and (max-width:660px) {
-  .tabs li{
-    width:50%;
-    margin-top:20px
+  .container {
+    background-size: cover;
+    overflow-x: hidden;
   }
-  .container{
-      background-size: cover;
-      overflow-x: hidden;
-  }
-  .tabs .tab-content_home{
+
+  .tabs .tab-content_home {
     margin-top: 100px;
     margin-left: -100px;
   }
 }
+
 @media screen and (max-width:530px) {
-  .tabs{
+  .tabs {
     top: 3%;
   }
-  #home_content{
+
+  #home_content {
     text-align: center;
     margin-left: -142px;
   }
-  #home_content p{
+
+  #home_content p {
     font-size: 18px;
   }
-
 }
+
 /*start of team cards*/
 .team-cards {
   display: flex;
-
   justify-content: space-around;
   margin-left: 40%;
-    width: 100%;
+  width: 100%;
 }
+
 .flip-card {
   background-color: transparent;
   width: 200px;
@@ -163,11 +199,12 @@
   perspective: 2000px;
   margin-bottom: 8%;
 }
-.two-flip-cards{
-    display: block;
-    max-width: 50%;
-    width: 250px;
-    height: 402px;
+
+.two-flip-cards {
+  display: block;
+  max-width: 50%;
+  width: 250px;
+  height: 402px;
 }
 
 .flip-card img {
@@ -200,12 +237,12 @@
 }
 
 .flip-card-front {
-    background-color: #141d235c;
-    color: black;
-    z-index: 2;
-    border: 2px solid #cacbce87;
-    border-radius: 50%;
-    padding: 10px;
+  background-color: #141d235c;
+  color: black;
+  z-index: 2;
+  border: 2px solid #cacbce87;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .flip-card-back {
@@ -228,11 +265,13 @@
   margin-right: 5px;
   margin-left: 5px;
 }
+
 .card-links:hover {
   color: RED;
 }
 
 @media only screen and (max-width: 1050px) {
+
   /* .team-cards {
     flex-wrap: wrap;
   } */
@@ -243,13 +282,16 @@
     max-width: 70%;
     max-height: 70%;
   }
-  .team-cards{
+
+  .team-cards {
     margin-left: 0;
   }
-  .flip-card-back h3{
+
+  .flip-card-back h3 {
     font-size: 1em;
   }
 }
+
 @media only screen and (max-width: 650px) {
   .team-cards {
     display: block;
@@ -257,45 +299,43 @@
     max-width: 100%;
     max-height: 100%;
   }
-  .flip-card{
+
+  .flip-card {
     width: 200px;
     height: 200px;
   }
 
-  .two-flip-cards{
+  .two-flip-cards {
     max-width: 400px;
     margin: 0px;
   }
-  .container-2{
+
+  .container-2 {
     height: 983px;
   }
-
-
 }
 
-
 /*amin area*/
-
-
 .about__h2 {
   width: 250px;
   font-size: 50px;
   margin: 0 auto;
 }
+
 .about__us1 {
   color: white;
   font-size: 150%;
   line-height: 7vh;
   background: #0c0c0c5e;
-    color: white;
-    padding: 15px;
-    margin-top: 5%;
-
-
+  color: white;
+  padding: 15px;
+  margin-top: 5%;
 }
+
 .about__us {
   min-height: 450px;
 }
+
 .img__left {
   background-image: url(../img/3.jpg);
   background-size: 600px;
@@ -304,40 +344,46 @@
   width: 300px;
   border-radius: 100%;
 }
+
 .container1 {
   width: 80%;
   text-align: center;
 }
-.about__span{
+
+.about__span {
   color: #008000;
 }
-@media(max-width: 660px){
-  .about__us1{
-    font-size:120%;
+
+@media(max-width: 660px) {
+  .about__us1 {
+    font-size: 120%;
     line-height: 3ch;
   }
+
   .about__h2 {
     font-size: 40px;
-    margin-top:10%;
+    margin-top: 10%;
   }
 }
 
 /******contact_us******/
 /*div1 contact-area*/
-.contact-area{
+.contact-area {
   margin: 0px 106px;
   width: 700px;
-  }
-  /*div2 contact_us*/
-  .contact_us{
+}
+
+/*div2 contact_us*/
+.contact_us {
   padding-left: 89px;
   background: #443d37b0;
   width: 390px;
   padding: 20px;
   width: 90%;
-  }
-  /*input, textarea that inside div2 contact_us*/
-  input, textarea{
+}
+
+/*input, textarea that inside div2 contact_us*/
+input, textarea {
   width: 100%;
   border: 0px solid rgb(255, 255, 255);
   background: #f8f6f6;
@@ -345,16 +391,19 @@
   padding: 10px;
   border-radius: 25px;
   font-size: 16px;
-  }
-  textarea {
+}
+
+textarea {
   height: 100px;
-  }
-  .input_field{
+}
+
+.input_field {
   font-size: 20px;
   font-weight: bold;
-  }
-  /*button*/
-  button[type="submit"] {
+}
+
+/*button*/
+button[type="submit"] {
   width: 53%;
   background: rgb(54, 77, 153);
   color: white;
@@ -363,11 +412,12 @@
   font-size: 16px;
   border-radius: 25px;
   font-weight: bold;
+}
+
+/* to suite contact_area with medium screen (less than 780px) */
+@media only screen and (max-width: 990px) {
+  .contact-area {
+    margin-left: -25px;
+    width: 100%;
   }
-  /* to suite contact_area with medium screen (less than 780px) */
-  @media only screen and (max-width: 990px) {
-  .contact-area{
-  margin-left: -25px;
-  width: 100%;
-  }
-  }
+}
