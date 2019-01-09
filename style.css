@@ -6,7 +6,7 @@
 
 }
 .container{
-    height: 641px;
+    /*height: 641px;*/
     background-image: url(images/background2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -16,10 +16,10 @@
 }
 .container-2{
   background: #80808033;
-height: 641px;
+  height: 641px;
 }
 .logo{
-  width: 190px;
+  width: 15%;;
   height: 165px;
 
 }
@@ -37,13 +37,18 @@ height: 641px;
   position: absolute;
 
 }
-.tabs .tab-content p{
+#home_content p{
   font-size: 18px;
-font-weight: 550;
-line-height: 45px;
-width: 600px;
+  font-weight: 550;
+  line-height: 45px;
+  width: 600px;
 }
 .tabs .tab-content{
+  display: none;
+  position: absolute;
+  left: 0;
+}
+.tabs .tab-content_home{
   display: none;
   position: absolute;
   left: 0;
@@ -65,7 +70,7 @@ width: 600px;
 .tabs li>input:checked + label{/*the input when checked the after input do that*/
   border-bottom: 2px solid #ff1504;
 }
-.tabs li>input:checked ~ .tab-content{/*the input check give the sibling class .tabs and do that*/
+.tabs li>input:checked ~ .tab-content_home{/*the input check give the sibling class .tabs and do that*/
       display: block;
       margin-top: 60px;
 }
@@ -74,4 +79,36 @@ width: 600px;
 }
 #home_content p{
   font-size: xx-large;
+}
+@media screen and (max-width:789px) {
+  .tabs li{
+    width:50%;
+    margin-top:20px
+  }
+  .container{
+      /*background-image: url(images/background2.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;*/
+      background-size: cover;
+      overflow-x: hidden;
+  }
+  .tabs .tab-content_home{
+    margin-top: 100px;
+    margin-left: -100px;
+  }
+}
+@media screen and (max-width:660px) {
+  .tabs li{
+    width:50%;
+    margin-top:20px
+  }
+  .container{
+      background-size: cover;
+      overflow-x: hidden;
+  }
+  .tabs .tab-content_home{
+    margin-top: 100px;
+    margin-left: -100px;
+  }
 }
