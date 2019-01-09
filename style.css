@@ -325,7 +325,6 @@
 /******contact_us******/
 /*div1 contact-area*/
 .contact-area{
-  padding: 25px;
   margin: 0px 106px;
   width: 700px;
   }
@@ -366,7 +365,7 @@
   font-weight: bold;
   }
   /* to suite contact_area with medium screen (less than 780px) */
-  @media only screen and (max-width: 780px) {
+  @media only screen and (max-width: 990px) {
   .contact-area{
   margin-left: -25px;
   width: 100%;
