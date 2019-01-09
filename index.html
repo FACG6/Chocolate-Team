@@ -124,7 +124,24 @@
           <input type="radio" name="tabs" id="contact">
           <label for="contact">Contact Us</label>
           <div class="tab-content">
-            <p>contact us Tabs<p>
+            <section >
+              <div class="contact-area">
+              <div class="contact_us">
+              <form action="/action_page.php" autocomplete="off">
+              <label for="name" class="input_field">Name</label>
+              <input id="name" class="input" placeholder="Your name" type="text" autocomplete="off" required>
+              <label for="email" class="input_field">Email</label>
+              <input id="email" class="input" placeholder="Your Email Address" type="email" autocomplete="off"
+              required>
+              <label for="msg" class="input_field">Your message</label>
+              <textarea id="msg" class="input" placeholder="Type your message here...." autocomplete="off" required></textarea>
+              <button name="submit" type="submit" id="contact-submit" class="button">Submit</button>
+              </form>
+              </div>
+              </div>
+              
+              </section>
+              
           </div>
         </li>
       </ul>
