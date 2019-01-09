@@ -15,12 +15,14 @@
     /*opacity: .7;*/
 }
 .container-2{
-  background: #80808033;
+  background: #80808099;
   height: 641px;
 }
+.div_img_logo{
+  display: inline;
+}
 .logo{
-  width: 15%;;
-  height: 165px;
+  width: 15%;
 
 }
 .tabs{
@@ -81,15 +83,15 @@
   font-size: xx-large;
 }
 @media screen and (max-width:789px) {
+  .tabs{
+    margin-left: 20%;
+  }
   .tabs li{
     width:50%;
-    margin-top:20px
+    margin-top:20px;
+    padding-top: 10px;
   }
   .container{
-      /*background-image: url(images/background2.jpg);
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-position: center;*/
       background-size: cover;
       overflow-x: hidden;
   }
