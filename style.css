@@ -127,13 +127,13 @@
   width: 200px;
   height: 200px;
   perspective: 2000px;
-  margin-bottom: 15%;
+  margin-bottom: 8%;
 }
 .two-flip-cards{
     display: block;
     max-width: 50%;
     width: 250px;
-    height: 450px;
+    height: 402px;
     
 }
 
@@ -224,13 +224,13 @@
     max-height: 100%;
   }
   .flip-card{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   
   .two-flip-cards{
-    max-width: 450px;
-    margin: 60px;
+    max-width: 400px;
+    margin: 0px;
   }
   
 
