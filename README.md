@@ -16,6 +16,7 @@ This page will inroduce our team, their message to the world, contact info., and
 +   **Shorouq**
     1. Tabs.
     2. Home section.
+    2. README File.
 +   **Alaa**
     1. Contact Us section.
 +   **Amin**
