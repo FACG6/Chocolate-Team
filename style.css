@@ -30,7 +30,6 @@
   position: relative;
   margin-left: 220px;
   margin-top: -100px;
-
 }
 .tabs li{
   float: left;
@@ -41,10 +40,14 @@
 
 }
 #home_content p{
+  font-size: 30px;
   font-weight: 550;
-  line-height: 75px;
+  line-height: 45px;
   width: 600px;
-  font-size: xx-large;
+  margin-top: 5%;
+  background: #0c0c0c7d;
+    color: white;
+    padding: 15px;
 }
 .tabs .tab-content{
   display: none;
@@ -57,9 +60,10 @@
   left: 0;
 }
 .img-home{
-    border: 3px solid black;
-    border-radius: 100%;
-    margin-bottom: 15px;
+  border: 3px solid #00000075;
+  border-radius: 100%;
+  margin-top: 5%;
+  padding: 10px;
 
 }
 .tabs li>label{
@@ -79,23 +83,16 @@
 }
 #home_content{
   text-align: center;
+  margin-left: 10%;
 }
+
 @media screen and (max-width:830px) {
-  #home_content p{
-    font-size: 30px;
-  }
-  .img-home{
-    width: 24%;
-    margin-top: 10%;
-  }
+
   .tabs{
     margin-left: 20%;
   }
-  .tabs li label{
-    font-size: 21px;
-  }
   .tabs li{
-    width: 40%;
+    width:50%;
     margin-top:20px;
     padding-top: 10px;
   }
@@ -107,6 +104,22 @@
     margin-top: 100px;
     margin-left: -100px;
   }
+  #home_content p{
+    font-size: 25px;
+    line-height: 65px;
+  }
+  .img-home{
+    width: 20%;
+    margin-top: 10%;
+  }
+  .tabs li>label{
+    font-size: 22px;
+  }
+  #home_content{
+    margin-top: 10%;
+    margin-left: -24%;
+  }
+
 }
 @media screen and (max-width:660px) {
   .tabs li{
@@ -122,16 +135,40 @@
     margin-left: -100px;
   }
 }
-/*start of cards*/
+@media screen and (max-width:530px) {
+  .tabs{
+    top: 3%;
+  }
+  #home_content{
+    text-align: center;
+    margin-left: -142px;
+  }
+  #home_content p{
+    font-size: 18px;
+  }
+
+}
+/*start of team cards*/
 .team-cards {
   display: flex;
+
   justify-content: space-around;
+  margin-left: 40%;
+    width: 100%;
 }
 .flip-card {
   background-color: transparent;
   width: 200px;
   height: 200px;
   perspective: 2000px;
+  margin-bottom: 8%;
+}
+.two-flip-cards{
+    display: block;
+    max-width: 50%;
+    width: 250px;
+    height: 402px;
+
 }
 
 .flip-card img {
@@ -164,17 +201,18 @@
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
-  z-index: 2;
-  border: 2px solid RED;
-  border-radius: 50%;
+    background-color: #141d235c;
+    color: black;
+    z-index: 2;
+    border: 2px solid #cacbce87;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 .flip-card-back {
   display: flex;
   flex-direction: column;
-  background-color: #2980b9;
+  background-color: #141d23;
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
@@ -195,20 +233,92 @@
   color: RED;
 }
 
-@media only screen and (max-width: 800px) {
-  .team-cards {
+@media only screen and (max-width: 1050px) {
+  /* .team-cards {
     flex-wrap: wrap;
-  }
+  } */
   .flip-card {
     padding: 10px;
-
+    margin-bottom: 0;
     flex: 1 0 20%;
+    max-width: 70%;
+    max-height: 70%;
+  }
+  .team-cards{
+    margin-left: 0;
+  }
+  .flip-card-back h3{
+    font-size: 1em;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
   .team-cards {
     display: block;
     margin: 0 auto;
-    width: 60%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .flip-card{
+    width: 200px;
+    height: 200px;
+  }
+
+  .two-flip-cards{
+    max-width: 400px;
+    margin: 0px;
+  }
+  .container-2{
+    height: 983px;
+  }
+
+
+}
+
+
+/*amin area*/
+
+
+.about__h2 {
+  width: 250px;
+  font-size: 50px;
+  margin: 0 auto;
+}
+.about__us1 {
+  color: white;
+  font-size: 150%;
+  line-height: 7vh;
+  background: #0c0c0c5e;
+    color: white;
+    padding: 15px;
+    margin-top: 5%;
+
+
+}
+.about__us {
+  min-height: 450px;
+}
+.img__left {
+  background-image: url(../img/3.jpg);
+  background-size: 600px;
+  background-position: center center;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+}
+.container1 {
+  width: 80%;
+  text-align: center;
+}
+.about__span{
+  color: #008000;
+}
+@media(max-width: 660px){
+  .about__us1{
+    font-size:120%;
+    line-height: 3ch;
+  }
+  .about__h2 {
+    font-size: 40px;
+    margin-top:10%;
   }
 }
