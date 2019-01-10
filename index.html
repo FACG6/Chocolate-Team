@@ -5,37 +5,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+  integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+  crossorigin="anonymous" />
   <title>Profolio Page</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="container-2">
+    <div class="container container__2">
       <!--Making the tabs-->
-      <div class="div_img_logo">
+      <div>
         <img src="images/logo.png" alt="logo" class="logo">
       </div>
       <ul class="tabs">
         <!--Making home tab-->
         <li>
           <input type="radio" name="tabs" id="home" checked>
-          <label for="home">Home</label>
-          <div class="tab-content tab-content_home" id="home_content">
-            <img src="images/hands.jpg" alt="logo" class="img-home">
-            <p> Wellcome &nbsp;To&nbsp; Our &nbsp;Website<br>
+          <label for="home"><i class="fas">&#xf015;</i> Home&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <div class="tab__content tab--content--home">
+            <h1 class="h1_home">Home</h1>
+            <img src="images/hands.jpg" alt="logo" class="tab__content__img">
+            <p class="tab__content__paragraph"> Wellcome &nbsp;To&nbsp; Our &nbsp;Website<br>
             Hand &nbsp;By &nbsp;Hand &nbsp;Upon &nbsp;Your &nbsp;Request </p>
           </div>
         </li>
         <!--making about us tab-->
         <li>
           <input type="radio" name="tabs" id="about">
-          <label for="about">About Us</label>
-          <div class="tab-content">
+          <label for="about"> <i class="fa fa-align-center"></i> About Us</label>
+          <div class="tab__content">
            <div class="about__us">
             <div class="container1">
               <h2 class="about__h2"><span class="about__span">About</span> Us</h2>
-              <p class="about__us1">Hello, everyone! we're learning programming because we like it and we think it's a good career for us due circumstances in tragic Gaza. At first we started as front end begginers and we intend to develop ourselves to learn more about programming in general and to become Full Stack Web Developers.</p>
+              <p class="about__us1">Hello, everyone! we're learning programming because
+                we like it and we think it's a good career for us due circumstances in tragic
+                Gaza. At first we started as front end begginers and we intend to develop ourselves
+                to learn more about programming in general and to become Full Stack Web Developers.</p>
             </div>
            </div>
           </div>
@@ -43,11 +49,13 @@
         <!--making our team tab-->
         <li>
           <input type="radio" name="tabs" id="cards">
-          <label for="cards">Our Team</label>
-          <div class="tab-content tab-content-card">
+          <label for="cards"><i class="fa fa-users"></i> Our Team</label>
+          <div class="tab__content tab__content-card">
             <!-- cards are divided into two groups, each group contains two cards -->
+            <h1 class="h1__cards h1--cards"> <span class="h1--our">Our</span> Team</h1>
             <section class="team-cards" aria-label="Team Members">
-              <div class="two-flip-cards"> 
+
+              <div class="two-flip-cards">
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
@@ -92,7 +100,7 @@
                     <div aria-label="data">
                       <h3>Shorouq Saad</h3>
                       <p><i>full stack develpper</i></p>
-                      <a href="mailto:aalqouqa@gmail.com" class="card-links" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                      <a href="mailto:shrooqabdullahsaad@gmail.com" class="card-links" aria-label="Email"><i class="fas fa-envelope"></i></a>
                       <a aria-label="github account" href="https://github.com/engshorouq" target="_blank" class="card-links"><i
                           class="fab fa-github"></i></a>
                     </div>
@@ -122,12 +130,13 @@
         <!--making contact us tab-->
         <li>
           <input type="radio" name="tabs" id="contact">
-          <label for="contact">Contact Us</label>
-          <div class="tab-content">
+          <label for="contact"><i class="fas">&#xf0e0;</i> Contact Us</label>
+          <div class="tab__content">
+            <h1 class="h1__cards h1--contact"> <span class="h1--contact">Contact</span> Us</h1>
             <section >
               <div class="contact-area">
               <div class="contact_us">
-              <form action="/action_page.php" autocomplete="off">
+              <form action="" autocomplete="off">
               <label for="name" class="input_field">Name</label>
               <input id="name" class="input" placeholder="Your name" type="text" autocomplete="off" required>
               <label for="email" class="input_field">Email</label>
@@ -139,9 +148,9 @@
               </form>
               </div>
               </div>
-              
+
               </section>
-              
+
           </div>
         </li>
       </ul>
