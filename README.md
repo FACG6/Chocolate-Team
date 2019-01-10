@@ -9,12 +9,6 @@ This page will inroduce our team, their message to the world, contact info., and
 +   Amin Al-Akhsham
 ##### _Note: You can access our page from [here](https://facg6.github.io/portfolio-page/)._
 
-### SKETCHES-STYLE
-![][]
-![][]
-![][]
-![][]
-
 ### Members Duties
 +   **Ayman**
     1. Team Cards section.

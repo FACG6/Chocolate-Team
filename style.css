@@ -261,7 +261,6 @@ label[for="contact"] {
 }
 
 @media only screen and (max-width: 1050px) {
-
   .flip-card {
     padding: 10px;
     margin-bottom: 0;
@@ -451,7 +450,8 @@ button[type="submit"] {
     width: 166%;
     line-height: 41px;
   }
-  .about__h2{
+
+  .about__h2 {
     margin-left: 50px;
   }
 }
@@ -613,6 +613,90 @@ button[type="submit"] {
     width: 200px;
     height: 150px;
     margin-bottom: -14px;
+  }
+
+  .two-flip-cards {
+    margin-top: -130px;
+  }
+}
+
+@media screen and (max-width:495px) {
+  .tabs {
+    top: 6%;
+  }
+
+  .tabs li>label {
+    font-size: 14px;
+  }
+
+  .h1_home {
+    font-size: 20px;
+    margin-top: 40%;
+  }
+
+  .tab__content__img {
+    width: 89px;
+  }
+
+  .tab__content__paragraph {
+    font-size: 13px;
+    padding: 0;
+    width: 155px;
+  }
+
+  .about__h2 {
+    margin-left: -10%;
+  }
+
+  .about__us1 {
+    font-size: 13px;
+    width: 65%;
+  }
+
+  .team-cards {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: -102px;
+  }
+
+  .h1--cards {
+    font-size: 20px;
+    margin-left: 34px;
+    margin-top: 38px;
+    margin-bottom: 126px;
+    margin-left: -58px;
+  }
+
+  .input_field {
+    font-size: 13px;
+  }
+
+  .h1--contact {
+    margin-top: 59px;
+    font-size: 20px;
+    margin-bottom: -29px;
+  }
+  input, textarea{
+    font-size: 12px;
+  }
+
+  .contact_us {
+    width: 25%;
+  }
+
+  .flip-card {
+    width: 125px;
+    height: 129px;
+    margin-bottom: 2px;
+  }
+  button[type="submit"]{
+    margin-left: 25px;
+  }
+
+  div[aria-label="data"] {
+    font-size: 10px;
   }
 
   .two-flip-cards {
