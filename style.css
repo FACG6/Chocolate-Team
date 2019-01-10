@@ -163,78 +163,6 @@ label[for="contact"] {
   }
 }
 
-/*@media screen and (max-width:830px) {
-  .tabs {
-    margin-left: 20%;
-  }
-
-  .tabs li {
-    width: 50%;
-    margin-top: 20px;
-    padding-top: 10px;
-  }
-
-  .container {
-    background-size: cover;
-    overflow-x: hidden;
-  }
-
-.tab--content--home {
-    margin-top: 100px;
-    margin-left: -100px;
-  }
-
-  .tab__content__paragraph {
-    font-size: 25px;
-    line-height: 65px;
-  }
-
-  .tab__content__img {
-    width: 20%;
-    margin-top: 10%;
-  }
-
-  .tabs li>label {
-    font-size: 22px;
-  }
-
-  .tab--content--home {
-    margin-top: 10%;
-    margin-left: -24%;
-  }
-}
-
-@media screen and (max-width:660px) {
-  .tabs li {
-    width: 50%;
-    margin-top: 20px
-  }
-
-  .container {
-    background-size: cover;
-    overflow-x: hidden;
-  }
-
-.tab--content--home {
-    margin-top: 100px;
-    margin-left: -100px;
-  }
-}
-
-@media screen and (max-width:530px) {
-  .tabs {
-    top: 3%;
-  }
-
-  .tab--content--home {
-    text-align: center;
-    margin-left: -142px;
-  }
-
-  .tab__content__paragraph {
-    font-size: 18px;
-  }
-}*/
 /*start of team cards*/
 .team-cards {
   display: flex;
@@ -334,9 +262,6 @@ label[for="contact"] {
 
 @media only screen and (max-width: 1050px) {
 
-  /* .team-cards {
-    flex-wrap: wrap;
-  } */
   .flip-card {
     padding: 10px;
     margin-bottom: 0;
@@ -417,17 +342,6 @@ label[for="contact"] {
   color: #e64926;
 }
 
-/*@media(max-width: 660px) {
-  .about__us1 {
-    font-size: 120%;
-    line-height: 3ch;
-  }
-
-  .about__h2 {
-    font-size: 40px;
-    margin-top: 10%;
-  }
-}*/
 /******contact_us******/
 /*div1 contact-area*/
 .h1--contact {
@@ -627,11 +541,6 @@ button[type="submit"] {
   .about__h2 {
     margin-top: 37px;
   }
-
-  /*.about__us {
-    margin-left: 12px;
-    width: 110%;
-  }*/
 }
 
 @media screen and (max-width:670px) {
