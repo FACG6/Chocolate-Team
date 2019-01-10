@@ -1,7 +1,7 @@
 # __Chocolate Team__
 Welcome to our first project in (html/css), it is simple like peice of chocolate.
 This page will inroduce our team, their message to the world, contact info., and etc.
-    
+
 ### Team Members:
 +   Ayman AlQoqa
 +   Shorouq Saad
@@ -10,7 +10,7 @@ This page will inroduce our team, their message to the world, contact info., and
 ##### _Note: You can access our page from [here](https://facg6.github.io/portfolio-page/)._
 
 ### Members Duties
-+   **Ayman** 
++   **Ayman**
     1. Team Cards section.
     2. README File.
 +   **Shorouq**
